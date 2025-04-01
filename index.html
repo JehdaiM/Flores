@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floristería</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincular archivo CSS -->
+</head>
+<body>
+    <!-- Encabezado con el carrito como ícono -->
+    <header class="encabezado-carrito">
+        <div class="carrito-icono" onclick="toggleCarrito()">
+            🛒 <!-- Icono del carrito -->
+        </div>
+        <div class="carrito-flotante" id="carrito-flotante">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+                <!-- Los productos agregados aparecerán aquí -->
+            </ul>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </header>
+
+    <!-- Sección de título con imagen de fondo -->
+    <div class="banner">
+        <h1>Floristería Ramos y Mayoreo</h1>
+    </div>
+
+    <!-- Sección de Productos -->
+    <main>
+        <div class="productos">
+            <div class="producto" data-id="1" data-nombre="Ramo de Rosas" data-precio="650">
+                <img src="https://nsgflower.com/wp-content/uploads/2020/09/rosas-rosadas.jpg" alt="Ramo de Rosas">
+                <h3>Ramo de Rosas</h3>
+                <p>$650</p>
+                <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="2" data-nombre="Ramo de Girasoles" data-precio="140">
+                <img src="https://nsgflower.com/wp-content/uploads/2019/08/IMG_20191017_204720_017_resized_20191119_073747375.jpg" alt="Ramo de Girasoles">
+                <h3>Ramo de Girasoles</h3>
+                <p>$140</p>
+                <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3" data-nombre="Ramo de Tulipanes" data-precio="300">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.ZBednvRa_uvOsgk3QxzqsQHaHv&pid=Api&P=0&h=180" alt="Ramo de Tulipanes">
+                <h3>Ramo de Tulipanes</h3>
+                <p>$300</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="4" data-nombre="Paquete de Rosas" data-precio="400">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.nPAXEgmAwo9t6cEx5GyFLQHaHa&pid=Api&P=0&h=180" alt="Paquete de Rosas">
+                <h3>Paquete de 12 Rosas</h3>
+                <p>$400</p>
+                <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="5" data-nombre="Ramo de Peonias" data-precio="3200">
+                <img src="https://floreriamargaritacarrillo.com.mx/wp-content/uploads/2020/05/RAMO-PEONIAS-1.jpg" alt="Ramo de Peonias">
+                <h3>Ramo de Peonias</h3>
+                <p>$3200</p>
+                <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="6" data-nombre="Adorno boda" data-precio="300">
+                <img src="https://floreriaadomicilio.mx/wp-content/uploads/2022/07/centro-de-mesa-para-boda.jpg" alt="Adorno boda">
+                <h3>Centro de mesa para boda</h3>
+                <p>$300</p>
+                <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="7" data-nombre="Margarita" data-precio="400">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.qfamYi92r9sopRtUWvNwmAHaJR&pid=Api&P=0&h=180" alt="Margarita">
+                <h3>Ramo de margaritas</h3>
+                <p>$400</p>
+                <button onclick="agregarAlCarrito(7)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="8" data-nombre="Novia" data-precio="4000">
+                <img src="https://i.pinimg.com/originals/71/89/ef/7189efbe324d4661950104166ea6df37.jpg" alt="Novia">
+                <h3>Ramo de Novia</h3>
+                <p>$4000</p>
+                <button onclick="agregarAlCarrito(8)">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Servicio Personalizado -->
+    <div class="servicio-personalizado">
+        <h2>Servicio Personalizado</h2>
+        <p>¿Necesitas un ramo personalizado? Contáctanos para más detalles.</p>
+        <button onclick="contactarServicioPersonalizado()">Contactar Servicio</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Vincular archivo JavaScript -->
+</body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floristería</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincular archivo CSS -->
+</head>
+<body>
+    <!-- Menú superior con el carrito -->
+    <header>
+        <h1>Floristería Ramos y Mayoreo</h1>
+        <div class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+                <!-- Los productos agregados aparecerán aquí -->
+            </ul>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </header>
+
+    <!-- Sección de Productos -->
+    <main>
+        <div class="productos">
+            <div class="producto" data-id="1" data-nombre="Ramo de Rosas" data-precio="50">
+                <img src="imagenes/ramo-rosas.jpg" alt="Ramo de Rosas">
+                <h3>Ramo de Rosas</h3>
+                <p>$50</p>
+                <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="2" data-nombre="Ramo de Girasoles" data-precio="40">
+                <img src="imagenes/ramo-girasoles.jpg" alt="Ramo de Girasoles">
+                <h3>Ramo de Girasoles</h3>
+                <p>$40</p>
+                <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3" data-nombre="Ramo de Tulipanes" data-precio="60">
+                <img src="imagenes/ramo-tulipanes.jpg" alt="Ramo de Tulipanes">
+                <h3>Ramo de Tulipanes</h3>
+                <p>$60</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-id="3" data-nombre="Ramo de Peoinas" data-precio="60">
+                <img src="imagenes/ramo-peoinas.jpg" alt="Ramo de Peoinas">
+                <h3>Ramo de Peoinas</h3>
+                <p>$300</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-id="3" data-nombre="Paquete de Rosas" data-precio="60">
+                <img src="imagenes/rosas.jpg" alt="Paquete de Rosas">
+                <h3>Paquete de 12 Rosas</h3>
+                <p>$200</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Sección de Servicio Personalizado -->
+    <div class="servicio-personalizado">
+        <h2>Servicio Personalizado</h2>
+        <p>¿Necesitas un ramo personalizado? Contáctanos para más detalles.</p>
+        <button onclick="contactarServicioPersonalizado()">Contactar Servicio</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Vincular archivo JavaScript -->
+</body>
+>>>>>>> 4fd3f7a236aed13810e95c509820364fd03922c1
+</html>
